@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'hinv-root',
@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   // <h2><p>Testing multiline using backtick.</p></h2>
   // `,
   styleUrls: ['./app.component.scss'],
-  styles: [`h1 { color: #ffbbff}`, `h2 { color: #ffdd00}`]
+  styles: [
+    `h1 {color: #ffbbff}`,
+    `h2 {color: #ffdd00}`
+  ]
 })
 export class AppComponent {
   title = 'hotelinventory';
