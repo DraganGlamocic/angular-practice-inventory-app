@@ -28,6 +28,7 @@ export class RoomsComponent implements OnInit {
             photos: 'https://unsplash.com/photos/a-living-room-with-a-couch-and-a-table-76JYlSoAYM4',
             checkinTime: new Date('11-12-2023'),
             checkoutTime: new Date('12-12-2023'),
+            rating: 4.55,
         },
         {
             roomNumber: 2,
@@ -37,6 +38,7 @@ export class RoomsComponent implements OnInit {
             photos: 'https://unsplash.com/photos/a-living-room-with-a-couch-and-a-table-76JYlSoAYM4',
             checkinTime: new Date('11-12-2023'),
             checkoutTime: new Date('12-12-2023'),
+            rating: 4.37,
         },
         {
             roomNumber: 3,
@@ -46,6 +48,7 @@ export class RoomsComponent implements OnInit {
             photos: 'https://unsplash.com/photos/a-green-and-black-background-with-a-lot-of-lights-hVm4zmZYnYg',
             checkinTime: new Date('11-12-2023'),
             checkoutTime: new Date('12-12-2023'),
+            rating: 3.94,
         }
     ];
 
