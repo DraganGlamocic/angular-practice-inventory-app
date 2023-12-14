@@ -43,7 +43,7 @@ export class RoomsComponent implements OnInit {
             roomType: 'Private Suite',
             amenities: 'Air Conditioner, Free Wi-Fi, TV, Bathroom, Kitchen',
             price: 1000,
-            photos: 'https://unsplash.com/photos/a-living-room-with-a-couch-and-a-table-76JYlSoAYM4',
+            photos: 'https://unsplash.com/photos/a-green-and-black-background-with-a-lot-of-lights-hVm4zmZYnYg',
             checkinTime: new Date('11-12-2023'),
             checkoutTime: new Date('12-12-2023'),
         }
