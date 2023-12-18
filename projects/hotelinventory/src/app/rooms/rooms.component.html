@@ -14,6 +14,10 @@
   {{selectedRoom | json }}
 </div>
 
+<div>
+  <button (click)="addRoom()">Add room</button>
+</div>
+
 <div *ngIf="rooms.availableRooms > 0">
 <hinv-rooms-list [rooms]="roomList"
   (selectedRoom)="selectRoom($event)">

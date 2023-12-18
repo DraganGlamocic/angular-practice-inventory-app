@@ -65,7 +65,26 @@ export class RoomsComponent implements OnInit {
   toggle() {
     this.hideRooms = !this.hideRooms;
   }
-selectRoom(room: RoomList) {
+
+  selectRoom(room: RoomList) {
     this.selectedRoom = room;
-}
+  }
+
+  addRoom() {
+    const room: RoomList = {
+      roomNumber: 4,
+      roomType: 'Deluxe Room',
+      amenities: 'Air Conditioner, Free Wi-Fi, TV, Bathroom, Kitchen',
+      price: 500,
+      photos: 'https://unsplash.com/photos/a-living-room-with-a-couch-and-a-table-76JYlSoAYM4',
+      checkinTime: new Date('11-12-2023'),
+      checkoutTime: new Date('12-12-2023'),
+      rating: 4.64
+    }
+
+    // this.roomList.push(room);
+    this.roomList = [...this.roomList, room];
+    // The ... operator is used to add a new room object to
+    // the existing roomList array without modifying its contents.
+  }
 }
