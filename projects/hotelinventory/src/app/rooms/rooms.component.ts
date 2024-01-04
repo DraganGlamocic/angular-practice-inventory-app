@@ -1,7 +1,7 @@
 import {
   AfterViewChecked,
   AfterViewInit,
-  Component, /*DoCheck,*/
+  Component, OnDestroy, /*DoCheck,*/
   OnInit,
   QueryList,
   ViewChild,

@@ -3,7 +3,7 @@ import {
   Component,
   EventEmitter,
   Input,
-  OnChanges,
+  OnChanges, OnDestroy,
   OnInit,
   Output,
   SimpleChanges
@@ -16,7 +16,7 @@ import {RoomList} from "../rooms";
   styleUrls: ['./rooms-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class RoomsListComponent implements OnInit, OnChanges {
+export class RoomsListComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input() rooms: RoomList[] = [];
 
@@ -39,5 +39,9 @@ export class RoomsListComponent implements OnInit, OnChanges {
     if(changes['title']) {
       this.title = changes['title'].currentValue.toUpperCase();
     }
+  }
+
+  ngOnDestroy() {
+    console.log('on destroy is called');
   }
 }
